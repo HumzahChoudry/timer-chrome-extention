@@ -14,18 +14,15 @@
 //   });
 // };
 
-function timerSubmit = (event) => {
-  debugger
+function timerSubmit(event) {
   const minutes = parseInt(document.getElementsByClassName('input')[0].value);
   const seconds = parseInt(document.getElementsByClassName('input')[1].value);
   const reminder = parseInt(document.getElementsByClassName('input')[2].value);
-
   handleRunTimer(minutes, seconds, reminder);
 }
 
-function handleRunTimer = (minutes, seconds, reminder) => {
+function handleRunTimer (minutes, seconds, reminder){
   minutes_to_seconds = minutes * 60
-
 }
 
 function startTimer(duration, display) {
