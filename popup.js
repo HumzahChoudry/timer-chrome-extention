@@ -3,7 +3,7 @@ function timerSubmit(event) {
   const seconds = parseInt(document.getElementsByClassName('input')[1].value);
   const reminder = parseInt(document.getElementsByClassName('input')[2].value);
   startTimer(convertTime(minutes, seconds), reminder);
-}
+
 
 function convertTime (minutes, seconds){
   return minutes_to_seconds = minutes * 60 + seconds
@@ -23,5 +23,7 @@ function startTimer(duration, reminder) {
         if (--timer < 0) {
             timer = duration;
         }
+
+
     }, 1000);
 }
