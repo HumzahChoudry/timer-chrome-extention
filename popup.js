@@ -2,14 +2,14 @@ function timerSubmit(event) {
   const minutes = parseInt(document.getElementsByClassName('input')[0].value);
   const seconds = parseInt(document.getElementsByClassName('input')[1].value);
   const reminder = parseInt(document.getElementsByClassName('input')[2].value);
-  startTimer(handleRunTimer(minutes, seconds, reminder));
+  startTimer(convertTime(minutes, seconds), reminder);
 }
 
-function handleRunTimer (minutes, seconds, reminder){
+function convertTime (minutes, seconds){
   return minutes_to_seconds = minutes * 60 + seconds
 }
 
-function startTimer(duration) {
+function startTimer(duration, reminder) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10)
