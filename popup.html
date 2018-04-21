@@ -1,0 +1,39 @@
+<!-- <!DOCTYPE html>
+ <html>
+   <head>
+     <style>
+       button {
+         height: 30px;
+         width: 30px;
+         outline: none;
+       }
+     </style>
+   </head>
+   <body>
+     <button id="changeColor"></button>
+      <script src="popup.js"></script>
+   </body>
+ </html> -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="time-display">
+      <span id="time">0:00</span>
+    </div>
+    <div class="inputs">
+      <label for="minutes">Minutes</label>
+      <input class="input" type="text" name="minutes"><br>
+        <label for="seconds">Seconds</label>
+      <input class="input" type="text" name="seconds"><br>
+        <label for="reminder">Reminder at</label>
+      <input class="input" type="text" name="reminder"><br>
+      <input type="button" value="Start Timer!" onclick="timerSubmit()">
+    </div>
+      <script src="popup.js"></script>
+  </body>
+</html>
