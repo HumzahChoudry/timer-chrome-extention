@@ -15,17 +15,18 @@
 // };
 
 function timerSubmit(event) {
+  console.log('clicked')
   const minutes = parseInt(document.getElementsByClassName('input')[0].value);
   const seconds = parseInt(document.getElementsByClassName('input')[1].value);
   const reminder = parseInt(document.getElementsByClassName('input')[2].value);
-  handleRunTimer(minutes, seconds, reminder);
+  startTimer(handleRunTimer(minutes, seconds, reminder));
 }
 
 function handleRunTimer (minutes, seconds, reminder){
-  minutes_to_seconds = minutes * 60
+  return minutes_to_seconds = minutes * 60 + seconds
 }
 
-function startTimer(duration, display) {
+function startTimer(duration) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10)
@@ -33,17 +34,11 @@ function startTimer(duration, display) {
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-
+        var display = document.querySelector('#time');
         display.textContent = minutes + ":" + seconds;
 
-        if (--timer < 0) {
+        if (--timer < 0) { 
             timer = duration;
         }
     }, 1000);
 }
-
-window.onload = function () {
-    var fiveMinutes = 60 * 5,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
