@@ -1,20 +1,3 @@
-<!-- <!DOCTYPE html>
- <html>
-   <head>
-     <style>
-       button {
-         height: 30px;
-         width: 30px;
-         outline: none;
-       }
-     </style>
-   </head>
-   <body>
-     <button id="changeColor"></button>
-      <script src="popup.js"></script>
-   </body>
- </html> -->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -27,11 +10,11 @@
     </div>
     <div class="inputs">
       <label for="minutes">Minutes</label>
-      <input class="input" type="text" name="minutes"><br>
+      <input class="input" type="number" name="minutes" value=0><br>
         <label for="seconds">Seconds</label>
-      <input class="input" type="text" name="seconds"><br>
-        <label for="reminder">Reminder at</label>
-      <input class="input" type="text" name="reminder"><br>
+      <input  class="input" type="number" name="seconds" value=0><br>
+        <label for="reminder">Reminder at (s): </label>
+      <input class="input" type="number" name="reminder" value=0><br>
       <input type="button" value="Start Timer!" onclick="timerSubmit()">
     </div>
       <script src="popup.js"></script>
