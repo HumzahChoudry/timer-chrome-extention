@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="utf-8" />
     <title></title>
   </head>
   <body>
-    <div id="time-display">
-      <span id="time">0:00</span>
+    <div>
+      <image class="logo" src="images/logo.png"></image>
+      <div id="time-display">
+        <span id="time">0:00</span>
+      </div>
+      <div class="inputs">
+        <label for="minutes" id="header"> Minutes</label>
+        <input class="input" type="number" name="minutes" value="0" /><br />
+        <label for="seconds" id="header"> Seconds</label>
+        <input class="input" type="number" name="seconds" value="0" /><br />
+        <label for="reminder" id="header"> Warning</label>
+        <input class="input" type="number" name="reminder" value="0" /><br />
+        <input
+          class="widgetButton"
+          type="button"
+          value="Start Timer!"
+          onclick="timerSubmit()"
+        />
+      </div>
     </div>
-    <div class="inputs">
-      <label for="minutes">Minutes</label>
-      <input class="input" type="number" name="minutes" value=0><br>
-        <label for="seconds">Seconds</label>
-      <input  class="input" type="number" name="seconds" value=0><br>
-        <label for="reminder">Reminder at (s): </label>
-      <input class="input" type="number" name="reminder" value=0><br>
-      <input type="button" value="Start Timer!" onclick="timerSubmit()">
-    </div>
-      <script src="popup.js"></script>
+    <script src="popup.js"></script>
   </body>
 </html>
