@@ -1,7 +1,7 @@
 {
   "name": "Flatiron Timer",
   "version": "1.0",
-  "description": "Humzahs Dope Timer!",
+  "description": "Humzahs and Sebastian's Dope Timer!",
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "background": {
     "scripts": ["background.js"],
@@ -11,17 +11,17 @@
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/brandon.png",
-      "32": "images/brandon.png",
-      "48": "images/brandon.png",
-      "128": "images/brandon.png"
+      "16": "images/download.png",
+      "32": "images/download.png",
+      "48": "images/download.png",
+      "128": "images/download.png"
     }
   },
   "icons": {
-    "16": "images/brandon.png",
-    "32": "images/brandon.png",
-    "48": "images/brandon.png",
-    "128": "images/brandon.png"
+    "16": "images/download.png",
+    "32": "images/download.png",
+    "48": "images/download.png",
+    "128": "images/download.png"
   },
   "manifest_version": 2
 }

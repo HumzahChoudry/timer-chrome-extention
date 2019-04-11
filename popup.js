@@ -51,9 +51,9 @@ function clearTimer() {
 }
 
 window.onload = function() {
-  const minutes = (document.getElementsByClassName("input")[0].value = 3);
-  const seconds = (document.getElementsByClassName("input")[1].value = 0);
-  const reminder = (document.getElementsByClassName("input")[2].value = 30);
+  document.getElementsByClassName("input")[0].value = 3;
+  document.getElementsByClassName("input")[1].value = 0;
+  document.getElementsByClassName("input")[2].value = 30;
 };
 
 function checkErrors(minutes, seconds, reminder) {
