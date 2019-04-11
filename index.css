@@ -20,6 +20,12 @@
 .input {
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 12px;
+  border: none;
+  color: rgba(77, 77, 86, 1);
+  font-weight: bold;
+  width: 128px;
+  border-radius: 3px;
 }
 
 .widgetButton {
@@ -37,7 +43,6 @@
   width: 130px;
   font-size: 15px;
   font-weight: bold;
-  margin-right: 1px;
 }
 
 .logo {
